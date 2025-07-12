@@ -1,0 +1,601 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>General Knowledge | Voice Reader</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+      color: #111;
+    }
+
+    header {
+      background-color: #0077cc;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: 26px;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 20px auto;
+      padding: 20px;
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    .question {
+      margin-bottom: 20px;
+      padding: 10px;
+      border-left: 5px solid #0077cc;
+      background-color: #f9f9f9;
+    }
+
+    .question strong {
+      display: block;
+      margin-bottom: 5px;
+      color: #0077cc;
+    }
+
+    .speak-btn {
+      margin-top: 5px;
+      padding: 5px 10px;
+      background-color: #0077cc;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 14px;
+    }
+
+    .speak-btn:hover {
+      background-color: #005fa3;
+    }
+
+    footer {
+      text-align: center;
+      padding: 15px;
+      background: #0077cc;
+      color: white;
+      margin-top: 30px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>📚 50 जनरल नॉलेज प्रश्न | GK with Voice by Mohit</h1>
+  </header>
+
+  <div class="container">
+
+    <!-- Example Questions -->
+    <div class="question">
+      <strong>1. भारत का राष्ट्रीय पशु कौन है?</strong>
+      उत्तर: बाघ (Tiger)
+      <br>
+      <button class="speak-btn" onclick="speak('भारत का राष्ट्रीय पशु बाघ है')">🔊 सुनें</button>
+    </div>
+
+    <div class="question">
+      <strong>2. Who is the current Prime Minister of the United Kingdom?</strong>
+      Answer: Rishi Sunak
+      <br>
+      <button class="speak-btn" onclick="speak('The current Prime Minister of the United Kingdom is Rishi Sunak')">🔊 Listen</button>
+    </div>
+
+    <div class="question">
+      <strong>3. ताजमहल का निर्माण किसने करवाया था?</strong>
+      उत्तर: शाहजहाँ
+      <br>
+      <button class="speak-btn" onclick="speak('ताजमहल का निर्माण शाहजहाँ ने करवाया था')">🔊 सुनें</button>
+    </div>
+
+<div class="question">
+      <strong>4.Which country is known as the ‘Land of the Rising Sun’?
+🔹 Answer: Japan
+      <br>
+      <button class="speak-btn" onclick="speak('Which country is known as the ‘Land of the Rising Sun’)">🔊 सुनें</button>
+    </div>
+
+<div class="question">
+      <strong>5. सौर मंडल का सबसे बड़ा ग्रह कौन सा है?
+🔹 उत्तर: बृहस्पति (Jupiter)
+      <br>
+      <button class="speak-btn" onclick="speak('सौर मंडल का सबसे बड़ा ग्रह कौन सा है?')">🔊 सुनें</button>
+    </div>
+
+<div class="question">
+      <strong>6. What is H2O commonly known as?
+🔹 Answer: Water
+      <br>
+      <button class="speak-btn" onclick="speak('What is H2O commonly known as?')">🔊 सुनें</button>
+    </div>
+
+<div class="question">
+      <strong7. मनुष्य के शरीर में कुल कितनी हड्डियाँ होती हैं?
+🔹 उत्तर: 206
+      <br>
+      <button class="speak-btn" onclick="speak('मनुष्य के शरीर में कुल कितनी हड्डियाँ होती हैं?')">🔊 सुनें</button>
+    </div>
+
+<div class="question">
+      <strong>8. Which planet is known as the Red Planet?
+🔹 Answer: Mars
+
+
+      <br>
+      <button class="speak-btn" onclick="speak(' Which planet is known as the Red Planet?')">🔊 सुनें</button>
+    </div>
+
+<div class="question">
+      <strong>9. 2023 में क्रिकेट विश्व कप किस देश ने जीता?
+🔹 उत्तर: ऑस्ट्रेलिया (Australia)
+      <br>
+      <button class="speak-btn" onclick="speak('2023 में क्रिकेट विश्व कप किस देश ने जीता?')">🔊 सुनें</button>
+    </div>
+
+<div class="question">
+      <strong>10. Who holds the record for the most goals in football history?
+🔹 Answer: Cristiano Ronaldo
+
+
+      <br>
+      <button class="speak-btn" onclick="speak('Who holds the record for the most goals in football history?')">🔊 सुनें</button>
+    </div>
+
+<div class="question">
+      <strong>11. भारत में IPL की शुरुआत कब हुई थी?
+🔹 उत्तर: 2008
+      <br>
+      <button class="speak-btn" onclick="speak('भारत में IPL की शुरुआत कब हुई थी?')">🔊 सुनें</button>
+    </div>
+
+<div class="question">
+      <strong>12. How many players are there in a hockey team?
+🔹 Answer: 11
+      <br>
+      <button class="speak-btn" onclick="speak('How many players are there in a hockey team?')">🔊 सुनें</button>
+    </div>
+
+<div class="question">
+      <strong>13. भारत का पहला डिजिटल करेंसी लॉन्च किसने किया?
+🔹 उत्तर: भारतीय रिज़र्व बैंक (RBI)
+      <br>
+      <button class="speak-btn" onclick="speak('भारत का पहला डिजिटल करेंसी लॉन्च किसने किया?')">🔊 सुनें</button>
+    </div>
+
+<div class="question">
+      <strong>14. Who won the Nobel Peace Prize 2023?
+🔹 Answer: Narges Mohammadi
+      <br>
+      <button class="speak-btn" onclick="speak('Who won the Nobel Peace Prize 2023?')">🔊 सुनें</button>
+    </div>
+
+<div class="question">
+      <strong>4.Which country is known as the ‘Land of the Rising Sun’?
+🔹 Answer: Japan
+      <br>
+      <button class="speak-btn" onclick="speak('ताजमहल का निर्माण शाहजहाँ ने करवाया था')">🔊 सुनें</button>
+    </div>
+
+<div class="question">
+      <strong>4.Which country is known as the ‘Land of the Rising Sun’?
+🔹 Answer: Japan
+      <br>
+      <button class="speak-btn" onclick="speak('ताजमहल का निर्माण शाहजहाँ ने करवाया था')">🔊 सुनें</button>
+    </div>
+
+<div class="question">
+      <strong>4.Which country is known as the ‘Land of the Rising Sun’?
+🔹 Answer: Japan
+      <br>
+      <button class="speak-btn" onclick="speak('ताजमहल का निर्माण शाहजहाँ ने करवाया था')">🔊 सुनें</button>
+    </div>
+
+<div class="question">
+      <strong>4.Which country is known as the ‘Land of the Rising Sun’?
+🔹 Answer: Japan
+      <br>
+      <button class="speak-btn" onclick="speak('ताजमहल का निर्माण शाहजहाँ ने करवाया था')">🔊 सुनें</button>
+    </div>
+
+<div class="question">
+      <strong>4.Which country is known as the ‘Land of the Rising Sun’?
+🔹 Answer: Japan
+      <br>
+      <button class="speak-btn" onclick="speak('ताजमहल का निर्माण शाहजहाँ ने करवाया था')">🔊 सुनें</button>
+    </div>
+
+<div class="question">
+      <strong>4.Which country is known as the ‘Land of the Rising Sun’?
+🔹 Answer: Japan
+      <br>
+      <button class="speak-btn" onclick="speak('ताजमहल का निर्माण शाहजहाँ ने करवाया था')">🔊 सुनें</button>
+    </div>
+
+<div class="question">
+      <strong>4.Which country is known as the ‘Land of the Rising Sun’?
+🔹 Answer: Japan
+      <br>
+      <button class="speak-btn" onclick="speak('ताजमहल का निर्माण शाहजहाँ ने करवाया था')">🔊 सुनें</button>
+    </div>
+
+<div class="question">
+      <strong>4.Which country is known as the ‘Land of the Rising Sun’?
+🔹 Answer: Japan
+      <br>
+      <button class="speak-btn" onclick="speak('ताजमहल का निर्माण शाहजहाँ ने करवाया था')">🔊 सुनें</button>
+    </div>
+
+<div class="question">
+      <strong>4.Which country is known as the ‘Land of the Rising Sun’?
+🔹 Answer: Japan
+      <br>
+      <button class="speak-btn" onclick="speak('ताजमहल का निर्माण शाहजहाँ ने करवाया था')">🔊 सुनें</button>
+    </div>
+
+<div class="question">
+      <strong>4.Which country is known as the ‘Land of the Rising Sun’?
+🔹 Answer: Japan
+      <br>
+      <button class="speak-btn" onclick="speak('ताजमहल का निर्माण शाहजहाँ ने करवाया था')">🔊 सुनें</button>
+    </div>
+
+<div class="question">
+      <strong>4.Which country is known as the ‘Land of the Rising Sun’?
+🔹 Answer: Japan
+      <br>
+      <button class="speak-btn" onclick="speak('ताजमहल का निर्माण शाहजहाँ ने करवाया था')">🔊 सुनें</button>
+    </div>
+
+<div class="question">
+      <strong>4.Which country is known as the ‘Land of the Rising Sun’?
+🔹 Answer: Japan
+      <br>
+      <button class="speak-btn" onclick="speak('ताजमहल का निर्माण शाहजहाँ ने करवाया था')">🔊 सुनें</button>
+    </div>
+
+<div class="question">
+      <strong>4.Which country is known as the ‘Land of the Rising Sun’?
+🔹 Answer: Japan
+      <br>
+      <button class="speak-btn" onclick="speak('ताजमहल का निर्माण शाहजहाँ ने करवाया था')">🔊 सुनें</button>
+    </div>
+
+<div class="question">
+      <strong>4.Which country is known as the ‘Land of the Rising Sun’?
+🔹 Answer: Japan
+      <br>
+      <button class="speak-btn" onclick="speak('ताजमहल का निर्माण शाहजहाँ ने करवाया था')">🔊 सुनें</button>
+    </div>
+
+<div class="question">
+      <strong>4.Which country is known as the ‘Land of the Rising Sun’?
+🔹 Answer: Japan
+      <br>
+      <button class="speak-btn" onclick="speak('ताजमहल का निर्माण शाहजहाँ ने करवाया था')">🔊 सुनें</button>
+    </div>
+
+<div class="question">
+      <strong>4.Which country is known as the ‘Land of the Rising Sun’?
+🔹 Answer: Japan
+      <br>
+      <button class="speak-btn" onclick="speak('ताजमहल का निर्माण शाहजहाँ ने करवाया था')">🔊 सुनें</button>
+    </div>
+
+<div class="question">
+      <strong>4.Which country is known as the ‘Land of the Rising Sun’?
+🔹 Answer: Japan
+      <br>
+      <button class="speak-btn" onclick="speak('ताजमहल का निर्माण शाहजहाँ ने करवाया था')">🔊 सुनें</button>
+    </div>
+
+<div class="question">
+      <strong>4.Which country is known as the ‘Land of the Rising Sun’?
+🔹 Answer: Japan
+      <br>
+      <button class="speak-btn" onclick="speak('ताजमहल का निर्माण शाहजहाँ ने करवाया था')">🔊 सुनें</button>
+    </div>
+
+<div class="question">
+      <strong>4.Which country is known as the ‘Land of the Rising Sun’?
+🔹 Answer: Japan
+      <br>
+      <button class="speak-btn" onclick="speak('ताजमहल का निर्माण शाहजहाँ ने करवाया था')">🔊 सुनें</button>
+    </div>
+
+<div class="question">
+      <strong>4.Which country is known as the ‘Land of the Rising Sun’?
+🔹 Answer: Japan
+      <br>
+      <button class="speak-btn" onclick="speak('ताजमहल का निर्माण शाहजहाँ ने करवाया था')">🔊 सुनें</button>
+    </div>
+
+<div class="question">
+      <strong>4.Which country is known as the ‘Land of the Rising Sun’?
+🔹 Answer: Japan
+      <br>
+      <button class="speak-btn" onclick="speak('ताजमहल का निर्माण शाहजहाँ ने करवाया था')">🔊 सुनें</button>
+    </div>
+
+<div class="question">
+      <strong>4.Which country is known as the ‘Land of the Rising Sun’?
+🔹 Answer: Japan
+      <br>
+      <button class="speak-btn" onclick="speak('ताजमहल का निर्माण शाहजहाँ ने करवाया था')">🔊 सुनें</button>
+    </div>
+
+<div class="question">
+      <strong>4.Which country is known as the ‘Land of the Rising Sun’?
+🔹 Answer: Japan
+      <br>
+      <button class="speak-btn" onclick="speak('ताजमहल का निर्माण शाहजहाँ ने करवाया था')">🔊 सुनें</button>
+    </div>
+
+<div class="question">
+      <strong>4.Which country is known as the ‘Land of the Rising Sun’?
+🔹 Answer: Japan
+      <br>
+      <button class="speak-btn" onclick="speak('ताजमहल का निर्माण शाहजहाँ ने करवाया था')">🔊 सुनें</button>
+    </div>
+
+<div class="question">
+      <strong>4.Which country is known as the ‘Land of the Rising Sun’?
+🔹 Answer: Japan
+      <br>
+      <button class="speak-btn" onclick="speak('ताजमहल का निर्माण शाहजहाँ ने करवाया था')">🔊 सुनें</button>
+    </div>
+
+<div class="question">
+      <strong>4.Which country is known as the ‘Land of the Rising Sun’?
+🔹 Answer: Japan
+      <br>
+      <button class="speak-btn" onclick="speak('ताजमहल का निर्माण शाहजहाँ ने करवाया था')">🔊 सुनें</button>
+    </div>
+
+<div class="question">
+      <strong>4.Which country is known as the ‘Land of the Rising Sun’?
+🔹 Answer: Japan
+      <br>
+      <button class="speak-btn" onclick="speak('ताजमहल का निर्माण शाहजहाँ ने करवाया था')">🔊 सुनें</button>
+    </div>
+<div class="question">
+      <strong>4.Which country is known as the ‘Land of the Rising Sun’?
+🔹 Answer: Japan
+      <br>
+      <button class="speak-btn" onclick="speak('ताजमहल का निर्माण शाहजहाँ ने करवाया था')">🔊 सुनें</button>
+    </div>
+
+<div class="question">
+      <strong>4.Which country is known as the ‘Land of the Rising Sun’?
+🔹 Answer: Japan
+      <br>
+      <button class="speak-btn" onclick="speak('ताजमहल का निर्माण शाहजहाँ ने करवाया था')">🔊 सुनें</button>
+    </div>
+
+<div class="question">
+      <strong>4.Which country is known as the ‘Land of the Rising Sun’?
+🔹 Answer: Japan
+      <br>
+      <button class="speak-btn" onclick="speak('ताजमहल का निर्माण शाहजहाँ ने करवाया था')">🔊 सुनें</button>
+    </div>
+
+<div class="question">
+      <strong>4.Which country is known as the ‘Land of the Rising Sun’?
+🔹 Answer: Japan
+      <br>
+      <button class="speak-btn" onclick="speak('ताजमहल का निर्माण शाहजहाँ ने करवाया था')">🔊 सुनें</button>
+    </div>
+
+<div class="question">
+      <strong>4.Which country is known as the ‘Land of the Rising Sun’?
+🔹 Answer: Japan
+      <br>
+      <button class="speak-btn" onclick="speak('ताजमहल का निर्माण शाहजहाँ ने करवाया था')">🔊 सुनें</button>
+    </div>
+
+<div class="question">
+      <strong>4.Which country is known as the ‘Land of the Rising Sun’?
+🔹 Answer: Japan
+      <br>
+      <button class="speak-btn" onclick="speak('ताजमहल का निर्माण शाहजहाँ ने करवाया था')">🔊 सुनें</button>
+    </div>
+
+<div class="question">
+      <strong>4.Which country is known as the ‘Land of the Rising Sun’?
+🔹 Answer: Japan
+      <br>
+      <button class="speak-btn" onclick="speak('ताजमहल का निर्माण शाहजहाँ ने करवाया था')">🔊 सुनें</button>
+    </div>
+
+<div class="question">
+      <strong>4.Which country is known as the ‘Land of the Rising Sun’?
+🔹 Answer: Japan
+      <br>
+      <button class="speak-btn" onclick="speak('ताजमहल का निर्माण शाहजहाँ ने करवाया था')">🔊 सुनें</button>
+    </div>
+
+<div class="question">
+      <strong>4.Which country is known as the ‘Land of the Rising Sun’?
+🔹 Answer: Japan
+      <br>
+      <button class="speak-btn" onclick="speak('ताजमहल का निर्माण शाहजहाँ ने करवाया था')">🔊 सुनें</button>
+    </div>
+<div class="question">
+      <strong>4.Which country is known as the ‘Land of the Rising Sun’?
+🔹 Answer: Japan
+      <br>
+      <button class="speak-btn" onclick="speak('ताजमहल का निर्माण शाहजहाँ ने करवाया था')">🔊 सुनें</button>
+    </div>
+
+<div class="question">
+      <strong>4.Which country is known as the ‘Land of the Rising Sun’?
+🔹 Answer: Japan
+      <br>
+      <button class="speak-btn" onclick="speak('ताजमहल का निर्माण शाहजहाँ ने करवाया था')">🔊 सुनें</button>
+    </div>
+
+<div class="question">
+      <strong>4.Which country is known as the ‘Land of the Rising Sun’?
+🔹 Answer: Japan
+      <br>
+      <button class="speak-btn" onclick="speak('ताजमहल का निर्माण शाहजहाँ ने करवाया था')">🔊 सुनें</button>
+    </div>
+
+<div class="question">
+      <strong>4.Which country is known as the ‘Land of the Rising Sun’?
+🔹 Answer: Japan
+      <br>
+      <button class="speak-btn" onclick="speak('ताजमहल का निर्माण शाहजहाँ ने करवाया था')">🔊 सुनें</button>
+    </div>
+
+<div class="question">
+      <strong>4.Which country is known as the ‘Land of the Rising Sun’?
+🔹 Answer: Japan
+      <br>
+      <button class="speak-btn" onclick="speak('ताजमहल का निर्माण शाहजहाँ ने करवाया था')">🔊 सुनें</button>
+    </div>
+
+<div class="question">
+      <strong>4.Which country is known as the ‘Land of the Rising Sun’?
+🔹 Answer: Japan
+      <br>
+      <button class="speak-btn" onclick="speak('ताजमहल का निर्माण शाहजहाँ ने करवाया था')">🔊 सुनें</button>
+    </div>
+
+<div class="question">
+      <strong>4.Which country is known as the ‘Land of the Rising Sun’?
+🔹 Answer: Japan
+      <br>
+      <button class="speak-btn" onclick="speak('ताजमहल का निर्माण शाहजहाँ ने करवाया था')">🔊 सुनें</button>
+    </div>
+
+<div class="question">
+      <strong>4.Which country is known as the ‘Land of the Rising Sun’?
+🔹 Answer: Japan
+      <br>
+      <button class="speak-btn" onclick="speak('ताजमहल का निर्माण शाहजहाँ ने करवाया था')">🔊 सुनें</button>
+    </div>
+
+<div class="question">
+      <strong>4.Which country is known as the ‘Land of the Rising Sun’?
+🔹 Answer: Japan
+      <br>
+      <button class="speak-btn" onclick="speak('ताजमहल का निर्माण शाहजहाँ ने करवाया था')">🔊 सुनें</button>
+    </div>
+
+<div class="question">
+      <strong>4.Which country is known as the ‘Land of the Rising Sun’?
+🔹 Answer: Japan
+      <br>
+      <button class="speak-btn" onclick="speak('ताजमहल का निर्माण शाहजहाँ ने करवाया था')">🔊 सुनें</button>
+    </div>
+
+<div class="question">
+      <strong>4.Which country is known as the ‘Land of the Rising Sun’?
+🔹 Answer: Japan
+      <br>
+      <button class="speak-btn" onclick="speak('ताजमहल का निर्माण शाहजहाँ ने करवाया था')">🔊 सुनें</button>
+    </div>
+
+<div class="question">
+      <strong>4.Which country is known as the ‘Land of the Rising Sun’?
+🔹 Answer: Japan
+      <br>
+      <button class="speak-btn" onclick="speak('ताजमहल का निर्माण शाहजहाँ ने करवाया था')">🔊 सुनें</button>
+    </div>
+
+
+<div class="question">
+      <strong>4.Which country is known as the ‘Land of the Rising Sun’?
+🔹 Answer: Japan
+      <br>
+      <button class="speak-btn" onclick="speak('ताजमहल का निर्माण शाहजहाँ ने करवाया था')">🔊 सुनें</button>
+    </div>
+<div class="question">
+      <strong>4.Which country is known as the ‘Land of the Rising Sun’?
+🔹 Answer: Japan
+      <br>
+      <button class="speak-btn" onclick="speak('ताजमहल का निर्माण शाहजहाँ ने करवाया था')">🔊 सुनें</button>
+    </div>
+
+<div class="question">
+      <strong>4.Which country is known as the ‘Land of the Rising Sun’?
+🔹 Answer: Japan
+      <br>
+      <button class="speak-btn" onclick="speak('ताजमहल का निर्माण शाहजहाँ ने करवाया था')">🔊 सुनें</button>
+    </div>
+
+<div class="question">
+      <strong>4.Which country is known as the ‘Land of the Rising Sun’?
+🔹 Answer: Japan
+      <br>
+      <button class="speak-btn" onclick="speak('ताजमहल का निर्माण शाहजहाँ ने करवाया था')">🔊 सुनें</button>
+    </div>
+
+<div class="question">
+      <strong>4.Which country is known as the ‘Land of the Rising Sun’?
+🔹 Answer: Japan
+      <br>
+      <button class="speak-btn" onclick="speak('ताजमहल का निर्माण शाहजहाँ ने करवाया था')">🔊 सुनें</button>
+    </div>
+
+<div class="question">
+      <strong>4.Which country is known as the ‘Land of the Rising Sun’?
+🔹 Answer: Japan
+      <br>
+      <button class="speak-btn" onclick="speak('ताजमहल का निर्माण शाहजहाँ ने करवाया था')">🔊 सुनें</button>
+    </div>
+
+<div class="question">
+      <strong>4.Which country is known as the ‘Land of the Rising Sun’?
+🔹 Answer: Japan
+      <br>
+      <button class="speak-btn" onclick="speak('ताजमहल का निर्माण शाहजहाँ ने करवाया था')">🔊 सुनें</button>
+    </div>
+
+<div class="question">
+      <strong>4.Which country is known as the ‘Land of the Rising Sun’?
+🔹 Answer: Japan
+      <br>
+      <button class="speak-btn" onclick="speak('ताजमहल का निर्माण शाहजहाँ ने करवाया था')">🔊 सुनें</button>
+    </div>
+
+<div class="question">
+      <strong>4.Which country is known as the ‘Land of the Rising Sun’?
+🔹 Answer: Japan
+      <br>
+      <button class="speak-btn" onclick="speak('ताजमहल का निर्माण शाहजहाँ ने करवाया था')">🔊 सुनें</button>
+    </div>
+
+    <!-- Add more questions below in same format -->
+
+  </div>
+
+  <footer>
+    © 2025 | Created by Mohit Saxena
+  </footer>
+
+  <script>
+    function speak(text) {
+      const synth = window.speechSynthesis;
+      const utter = new SpeechSynthesisUtterance(text);
+      utter.lang = text.match(/[अ-ह]/) ? 'hi-IN' : 'en-US'; // Hindi or English
+      synth.cancel(); // stop previous
+      synth.speak(utter);
+    }
+  </script>
+
+</body>
+</html>
